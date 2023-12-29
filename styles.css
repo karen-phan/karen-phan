@@ -1,0 +1,138 @@
+/* GENERAL */
+
+body, html {
+    background-color: #F9FAFB;
+    font-family: 'Lexend Deca', 'Times New Roman', sans-serif; /* tnr as fallback */
+    font-size: 1rem;
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+.container {
+    padding: 0px; /* override b5 padding to format margins */
+}
+
+footer {
+    font-size: 0.8rem;
+    padding-bottom: 4px;
+}
+
+h1, h2, h3, h4, h5 {
+    font-weight: 500; /* default styling is too thick */
+}
+
+.role {
+    margin-bottom: 7px; /* decrease space btwn role & description */
+    font-weight: 500;
+}
+
+.small-h3 {
+    font-size: 1.2rem; /* default size is too big */
+}
+
+.btn {
+    margin-right: 10px; /* space btwn buttons */
+}
+
+/* LINKS, WebAIM a11y link guidance: https://webaim.org/blog/wcag-2-0-and-link-colors/ */
+
+/* unvisited link */
+a:link {
+    color: #3344dd;
+}
+  
+/* visited link */
+a:visited:not(.navbar a) {
+    color: #884488;
+}
+  
+/* hover link */
+a:hover, .navbar a:hover:not(.navbar-brand) { /* nav links excluding the navbar brand */
+    color: #bb1122;
+    background-color: lightyellow;
+}
+  
+/* selected link */
+a:active, .navbar a:active {
+    color: #bb1122;
+}
+  
+/* NAVBAR */
+
+.navbar a {
+    font-family: 'Lexend Deca', 'Times New Roman', sans-serif; /* tnr as fallback */
+    color: black;
+}
+
+.navbar a:hover {
+    text-decoration: underline; /* info is not conveyed thru color alone */
+}
+
+/* MEDIA QUERIES re. 10/5 lec slides */
+
+@media screen and (max-width: 768px) {
+    /* small screens */
+    .navbar {
+        margin: 1% 3%;
+        font-size: 1rem;
+    }
+
+    #home, #about, #writing, #projects, footer {
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+
+    #home {
+        margin-top: 7%;
+        margin-bottom: 7%;
+    }
+
+    #about, #writing {
+        margin-bottom: 3%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    /* medium screens */
+    .navbar {
+        margin: 2% 4%;
+        font-size: 1.1rem;
+    }
+
+    #home, #about, #writing, #projects, footer {
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+
+    #home {
+        margin-top: 8%;
+        margin-bottom: 8%;
+    }
+
+    #about, #writing {
+        margin-bottom: 4%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    /* large screens */
+
+    .navbar {
+        margin: 3% 6%;
+        font-size: 1.2rem;
+    }
+
+    #home, #about, #writing, #projects, footer {
+        margin-left: 6%;
+        margin-right: 6%;
+    }
+
+    #home {
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+
+    #about, #writing {
+        margin-bottom: 5%;
+    }
+}

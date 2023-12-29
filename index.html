@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <!-- responsive viewport meta tag: https://getbootstrap.com/docs/5.3/getting-started/introduction/ -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="author" content="Karen Phan">
+  <meta name="description" content="Karen Phan portfolio">
+  <title>Karen Phan</title>
+
+   <!-- Bootstrap CSS: https://getbootstrap.com/docs/5.3/getting-started/introduction/ -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+   <!-- stylesheets, fonts -->
+   <link rel="stylesheet" href="styles.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+   <script src="https://kit.fontawesome.com/4403a7f041.js" crossorigin="anonymous"></script>
+
+</head>
+
+<!-- flexbox for home page: https://getbootstrap.com/docs/5.0/utilities/flex/ -->
+<body>
+  <!-- Navigation Menu (Bootstrap)-->
+  <nav class="navbar navbar-expand-sm navbar-light bg-transparent">
+        <div class="container-fluid">
+           <a class="navbar-brand" href="#">KP</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarID"
+              aria-controls="navbarID" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarID">
+            <!-- list-based approach: https://getbootstrap.com/docs/5.0/components/navbar/ -->
+            <ul class="navbar-nav items">
+              <li class="nav-link active"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
+              <li class="nav-link"><a class="nav-link" href="#about">About</a></li>
+              <li class="nav-link"><a class="nav-link" href="#writing">Writing</a></li>
+              <li class="nav-link"><a class="nav-link" href="#projects">Projects</a></li>
+            </ul>
+          </div>
+      </div>
+  </nav>
+
+  <div class="container-fluid d-flex flex-column" id="page-content"> <!-- expand to fill space in body -->
+
+    <!-- Home Section -->
+    <section id="home">
+      <div class="row">
+        <div class="col-md-10 col-lg-10">
+          <h1>Hi! I'm Karen, an English and HCI student who likes writing and learning about accessibility.</h1>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <h2>About</h2>
+      <div class="row gy-3">
+        <div class="col-xs-12 col-md-8">
+          <p>
+            I'm a junior at UC Irvine studying English and informatics (human-computer interaction). These disciplines teach me
+            about vibrant human experiences.
+          </p>
+          <p>
+            Currently, I write for the UCI Donald Bren School of ICS Communications Office. I'm also part of UCI's <a href="https://insite.ics.uci.edu/">INsite lab</a> 
+            that designs and builds universally usable technologies. I hope to work in digital a11y after graduating.
+          </p>
+          <p>
+            Fun fact: As of January 2024, I'm on level 10.1k in Homescapes. I watch Korean drama, try new boba shops, and window shop in my free time.
+          </p>
+          <p class="small-h3">Contact me:</p>
+          <button type="button" class="btn btn-outline-dark" onclick="location.href='https://www.linkedin.com/in/karenaphan/';"><span class="fa fa-linkedin-square" aria-hidden="true"></span> LinkedIn</button>
+          <button type="button" class="btn btn-outline-dark" onclick="location.href='https://twitter.com/zapkanre';"><span class="fa fa-twitter" aria-hidden="true"></span> Twitter</button>      
+        </div>
+        <div class="col">
+          <img src="assets/karen-group.jpg" class="img-fluid" id="about-img" alt="Karen Phan in her car with 2 friends.">
+        </div>
+      </div>
+    </section>
+
+    <!-- Writing Section -->
+    <section id="writing">
+      <h2>Writing</h2>
+      <p>Born to write and edit.</p>
+      <div class="row">
+        <div class="col-sm-4">
+          <img src="assets/anteater-logo.png" class="img-fluid" alt="UCI Anteater logo.">
+          <h3>UCI School of ICS</h3>
+          <p class="role">Assistant Writer</p>
+          <p>Read my feature, student life, and news articles at <a href="https://karenuci.medium.com" target="_blank">karenuci.medium.com</a>.</p>
+        </div>
+        <div class="col-sm-4">
+          <img src="assets/servicenow-logo.png" class="img-fluid" alt="ServiceNow logo.">
+          <h3>ServiceNow</h3>
+          <p class="role">Technical Editor Intern</p>
+          <p>I edited accessibility conformance reports published on the 
+          <a href="https://docs.servicenow.com/bundle/accessibility/page/administer/accessibility-508-compliance/concept/available-accessibility-conformance-reports.html" target="_blank">ServiceNow Documentation site</a>.</p>
+        </div>
+        <div class="col-sm-4">
+          <img src="assets/nasa-logo.png" class="img-fluid" alt="NASA logo.">
+          <h3>NASA</h3>
+          <p class="role">AI/ML Communications Intern</p>
+          <p>I wrote blogs and feature articles for our internal AI/ML SharePoint site.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <p>I can code and design too — take a look at what I've created.</p>
+      <div class="row">
+        <div class="col-sm-4">
+          <img src="assets/html-css-logos.png" class="img-fluid" alt="HTML and CSS logos.">
+          <h3>Portfolio</h3>
+          <p>I built this website myself with HTML and CSS.</p>
+        </div>
+        <div class="col-sm-4">
+          <img src="assets/stickyfi-logo.png" class="img-fluid" alt="Sticky note icon.">
+          <h3>Stickyfi</h3>
+          <p>A class project. Stay tuned!</p>
+        </div>
+        <div class="col-sm-4">
+          <img src="assets/coding-project.png" class="img-fluid" alt="Project and programming icons.">
+          <h3>Project 3</h3>
+          <p>A personal project. Stay tuned!</p>
+        </div>
+      </div>
+    </section>
+  </div>
+  
+  <!-- Footer -->
+  <footer class="text-center">
+    <hr>
+      <p>This website uses the <a href="https://fonts.google.com/specimen/Lexend+Deca/about" target="_blank">Lexend Deca</a> typeface. 
+      Check out Google's <a href="https://fonts.google.com/knowledge/readability_and_accessibility/introducing_accessibility_in_typography" target="_blank">Introducing Accessibility in Typography</a>
+      article to learn more about making text accessible.</p>
+  </footer>
+
+  <!-- Bootstrap JavaScript: https://getbootstrap.com/docs/5.3/getting-started/introduction/ -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
